@@ -1,7 +1,14 @@
 ---
 layout: 'default'
 isPaged: false
+section: 'home'
+section2:
+  -
+    class: 'fa fa-star-o'
+    title: 'Rich Internet Applications'
+    description: 'Với nhiều năm kinh nghiệm tư vấn & phát triển giải pháp doanh nghiệp phức tạp trên nền WEB, VinaAS có thể tạo ra những ứng dụng WEB mạnh mẽ có khả năng tương tác cao, nghiệp vụ phức tạp, thông minh và thân thiện. Sản phẩm của VinaAS được thiết kế giúp doanh nghiệp tối ưu các hoạt động quản lý, nâng cao hiệu xuất, tăng trưởng kinh doanh và giảm thiểu chi phí.'
 ---
+<%= %>
 <div class="container">
         <!-- SKILLS -->
         <h2 class="with-breaker animate-me fadeInUp">

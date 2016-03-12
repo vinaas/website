@@ -1,3 +1,4 @@
+<%= %>
 <div id="top-navigation">
     <ul class="animate-me fadeInDown" data-wow-duration="1.2s">
         <li class="menu-item"><i class="fa fa-phone"></i> 00 11 22 33 44</li>

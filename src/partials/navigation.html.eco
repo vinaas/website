@@ -9,14 +9,13 @@
     <a href="#" id="close-navigation-mobile"><i class="fa fa-long-arrow-left"></i></a>
 
     <ul id="left-navigation" class="animate-me fadeInLeftBig">
-        <li class="menu-item current-menu-item">
-            <a href="index.html" data-description="Giới thiệu Vinaas">Trang chủ</a>
+
+      <% for nav in @site.navigation[0..2]: %>
+        <li class="menu-item <%= @isCurrent(nav) %>">
+          <a href="<%= nav.href %>" data-description="<%= nav.sub %>"><%= nav.name %></a>
         </li>
-        <li class="menu-item">
-            <a href="portfolio.html" data-description="Đã thực hiện">Sản phẩm</a>
-        </li>
-        <li class="menu-item"><a href="skills.html" data-description="Cho khách hàng">Dịch vụ</a>
-        </li>
+      <% end %>
+
     </ul>
     <div class="animate-me flipInX" data-wow-duration="3s">
         <a href="index.html" id="logo-navigation">
@@ -24,12 +23,10 @@
         </a>
     </div>
     <ul id="right-navigation" class="animate-me fadeInRightBig">
-        <li class="menu-item"><a href="about.html" data-description="We're family">Về chúng tôi</a>
+      <% for nav in @site.navigation[3..5]: %>
+        <li class="menu-item <%= @isCurrent(nav) %>">
+          <a href="<%= nav.href %>" data-description="<%= nav.sub %>"><%= nav.name %></a>
         </li>
-        <li class="menu-item">
-            <a href="blog.html" data-description="Chia sẽ kiến thức">Bài viết</a>
-        </li>
-        <li class="menu-item"><a href="contact.html" data-description="Let's coffee">Liên hệ</a>
-        </li>
+      <% end %>
     </ul>
 </nav>

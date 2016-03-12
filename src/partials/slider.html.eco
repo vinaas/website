@@ -1,3 +1,4 @@
+<%= %>
 <!-- TEXT SLIDER -->
 <div id="ticker" class="animate-me zoomIn">
     <h4 class="with-breaker">Tại sao lại chọn Vinaas ?</h4>
@@ -6,7 +7,6 @@
             <li>Khách hàng hài lòng là động lực</li>
             <li>Công nghệ tiên tiến cho thành công</li>
             <li>Sẵn sàng cho những dự án tiên phong</li>
-
         </ul>
     </div>
 </div>

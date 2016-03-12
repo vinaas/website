@@ -1,5 +1,6 @@
 ---
 layout: 'post'
+section: 'product'
 isPaged: true
 title: 'Sản phẩm'
 subTitle: 'của chúng tôi'

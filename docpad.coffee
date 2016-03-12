@@ -22,32 +22,32 @@ docpadConfig = {
         {
           name: 'Trang chủ',
           href: '/',
-          section: 'home'
+          section: 'home', sub: 'Giới thiệu Vinaas'
         },
         {
           name: 'Sản phẩm',
           href: '/sanpham.html',
-          section: 'product'
+          section: 'product',sub: 'Đã thực hiện'
         },
         {
           name: 'Dịch vụ',
           href: '/dichvu.html',
-          section: 'service'
+          section: 'service', sub: 'Cho khách hàng'
         },
         {
           name: 'Về chúng tôi',
           href: '/vechungtoi.html',
-          section: 'about'
+          section: 'about', sub: 'We are family'
         },
         {
           name: 'Bài viết',
           href: '/baiviet.html',
-          section: 'blog'
+          section: 'blog', sub: 'Chia sẽ kiến thức'
         },
         {
           name: 'Liên hệ',
           href: '/lienhe.html',
-          section: 'lienhe'
+          section: 'lienhe', sub: 'Lets coffee'
         }
       ]
 
@@ -56,8 +56,8 @@ docpadConfig = {
 		bodyClass: -> if @document.isPaged then "small" else "big"
 		currentYear: -> new Date().getFullYear()
 		isCurrent: (l) ->
-      if @document.section is l.section  then ' nav-current'
-      else if @document.url is l.href then ' nav-current'
+      if @document.section is l.section  then ' current-menu-item'
+      else if @document.url is l.href then ' current-menu-item'
       else ''
 		time : (ts, format) ->
 			format = format || 'DO MMMM , YYYY'

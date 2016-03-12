@@ -31,7 +31,6 @@
         <header id="header" class="<%= @bodyClass() %> with-separation-bottom">
             <!-- POINTER ANIMATED -->
             <canvas id="header-canvas"></canvas>
-
             <%- @partial('top-nav') %>
             <%- @partial('navigation') %>
 
