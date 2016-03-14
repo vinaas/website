@@ -1083,6 +1083,9 @@ figure.effect-sadie p {
 	color: #FFF;
 	-webkit-transform: translate3d(0,10px,0);
 	transform: translate3d(0,10px,0);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 figure.effect-sadie:hover h4 {
 	color: #fff;

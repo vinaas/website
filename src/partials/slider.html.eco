@@ -29,10 +29,10 @@
 <div class="flexslider" id="header-slider">
     <ul class="slides">
         <li>
-            <img src="images/backgrounds/bg-a1.jpg" alt="SLider Image">
+            <img src="/images/backgrounds/bg-a1.jpg" alt="SLider Image">
         </li>
         <li>
-            <img src="images/backgrounds/bg-a2.jpg" alt="SLider Image">
+            <img src="/images/backgrounds/bg-a2.jpg" alt="SLider Image">
         </li>
 
     </ul>

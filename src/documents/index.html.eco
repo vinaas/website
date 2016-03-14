@@ -1,14 +1,9 @@
 ---
 layout: 'default'
-isPaged: false
+isIndex: true
 section: 'home'
-section2:
-  -
-    class: 'fa fa-star-o'
-    title: 'Rich Internet Applications'
-    description: 'Với nhiều năm kinh nghiệm tư vấn & phát triển giải pháp doanh nghiệp phức tạp trên nền WEB, VinaAS có thể tạo ra những ứng dụng WEB mạnh mẽ có khả năng tương tác cao, nghiệp vụ phức tạp, thông minh và thân thiện. Sản phẩm của VinaAS được thiết kế giúp doanh nghiệp tối ưu các hoạt động quản lý, nâng cao hiệu xuất, tăng trưởng kinh doanh và giảm thiểu chi phí.'
 ---
-<%= %>
+
 <div class="container">
         <!-- SKILLS -->
         <h2 class="with-breaker animate-me fadeInUp">
@@ -37,68 +32,39 @@ section2:
 
         <!--PORTFOLIO -->
         <h2 class="with-breaker animate-me fadeInUp">
-    Dự án <span>Đã và đang thực hiện!</span>
+    Dự án <span>Đã và đang thực hiện thành công!</span>
   </h2>
     </div>
 
     <div id="portfolio-container" class="with-separation-bottom with-separation-top">
-            <!--PORTFOLIO ITEM -->
-            <figure class="portfolio-item effect-sadie">
-                <img src="images/portfolio/01.jpg" alt="Image portfolio" />
-                <figcaption>
-                    <h4>Volume Calculator</h4>
-                    <p>Mô hình hóa và lập bảng dung tích tàu dầu trọng tải lớn</p>
-                    <a href="portfolio-single.html">Xem thêm</a>
-                </figcaption>
-            </figure>
-            <!--PORTFOLIO ITEM -->
-            <figure class="portfolio-item effect-sadie">
-                <img src="images/portfolio/02.jpg" alt="Image portfolio" />
-                <figcaption>
-                    <h4>Văn phòng trực tuyến</h4>
-                    <p>Giải pháp quản lý công việc trực tuyến cho Văn phòng luật sư</p>
-                    <a href="portfolio-single.html">Xem thêm</a>
-                </figcaption>
-            </figure>
-            <!--PORTFOLIO ITEM -->
-            <figure class="portfolio-item effect-sadie">
-                <img src="images/portfolio/03.jpg" alt="Image portfolio" />
-                <figcaption>
-                    <h4>Quản lý đặt hàng, đơn hàng và kho bãi</h4>
-                    <p>Hệ thống đặt hàng, giao hàng, quản lý xuất nhập tồn chuỗi kho bãi trên toàn quốc</p>
-                    <a href="portfolio-single.html">Xem thêm</a>
-                </figcaption>
-            </figure>
-            <!--PORTFOLIO ITEM -->
-            <figure class="portfolio-item effect-sadie">
-                <img src="images/portfolio/04.jpg" alt="Image portfolio" />
-                <figcaption>
-                    <h4>Quản lý sinh viên</h4>
-                    <p>Đáp ứng dữ liệu lớn, hỗ trợ đầy đủ các thống kê, báo cáo theo quy định của Bộ Giáo Dục.</p>
-                    <a href="portfolio-single.html">Xem thêm</a>
-                </figcaption>
-            </figure>
-            <!--PORTFOLIO ITEM -->
-            <figure class="portfolio-item effect-sadie">
-                <img src="images/portfolio/05.jpg" alt="Image portfolio" />
-                <figcaption>
-                    <h4>Tra cứu chữa bệnh bằng Diện Chẩn</h4>
-                    <p>Cho phép tra cứu trên 200 phác đồ chữa bệnh và công năng chữa bệnh theo huyệt bằng Diện Chẩn</p>
-                    <a href="portfolio-single.html">Xem thêm</a>
-                </figcaption>
-            </figure>
-            <!--PORTFOLIO ITEM -->
-            <figure class="portfolio-item effect-sadie">
-                <img src="images/portfolio/06.jpg" alt="Image portfolio" />
-                <figcaption>
-                    <h4>Website thương mại mua bán tại Huế</h4>
-                    <p>Phục vụ trên 5000 thành viên, 15000 lượt truy cập mỗi ngày, Web Mua bán Rao vặt chuyên nghiệp dành riêng TP Huế</p>
-                    <a href="portfolio-single.html">Xem thêm</a>
-                </figcaption>
-            </figure>
+      <% if @getCollection('projects').length >= 5 : %>
+            <% for soluong in [0...6]: %>
+              <% project = @getCollection('projects').toJSON()[soluong] %>
+              <figure class="portfolio-item effect-sadie">
+                  <img src="<%= project.images[0].url %>" alt="project.images[0].alt"/>
+                  <figcaption>
+                      <h4><%= project.title %></h4>
+                      <p><%= project.description %></p>
+                      <a href="<%= project.url %>">View more</a>
+                  </figcaption>
+              </figure>
+            <% end %>
+            <% else: %>
+            <% for soluong in [0...@getCollection('projects').length]: %>
+              <% project = @getCollection('projects').toJSON()[soluong] %>
+              <figure class="portfolio-item effect-sadie">
+                  <img src="<%= project.images[0].url %>" alt="project.images[0].alt"/>
+                  <figcaption>
+                      <h4><%= project.title %></h4>
+                      <p><%= project.description %></p>
+                      <a href="<%= project.url %>">View more</a>
+                  </figcaption>
+              </figure>
+                <% end %>
+            <% end %>
         </div>
         <div class="portfolio-button center animate-me zoomIn">
-            <a href="portfolio.html" class="btn btn-default"><i class="fa fa-suitcase"></i> Xem thêm</a>
+            <a href="sanpham.html" class="btn btn-default"><i class="fa fa-suitcase"></i> Xem thêm</a>
         </div>
 
         <!-- CUSTOM CONTAINER -->

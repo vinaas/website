@@ -53,7 +53,7 @@ docpadConfig = {
 
 		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 		getDescription: -> if @document.description then "#{@document.description} | #{@site.description}" else @site.description
-		bodyClass: -> if @document.isPaged then "small" else "big"
+		bodyClass: -> if @document.isIndex then "big" else "small"
 		currentYear: -> new Date().getFullYear()
 		isCurrent: (l) ->
       if @document.section is l.section  then ' current-menu-item'
@@ -64,8 +64,8 @@ docpadConfig = {
 			ts = new Date(ts) || new Date()
 			moment(ts).format(format)
 	collections:
-      products: ->
-          @getCollection("html").findAllLive({isPost:true}, {postDate: -1})
+      projects: ->
+          @getCollection("html").findAllLive({isProject:true}, {postDate: -1})
 
 	 # Environments
   # Allows us to set custom configuration for specific environments

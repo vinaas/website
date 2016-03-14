@@ -34,10 +34,10 @@
             <%- @partial('top-nav') %>
             <%- @partial('navigation') %>
 
-            <% if @document.isPaged: %>
-              <%- @partial('bg-detail') %>
+            <% if @document.isIndex: %>
+              <%- @partial('slider') %>
             <% else: %>
-            <%- @partial('slider') %>
+              <%- @partial('bg-detail') %>
             <% end %>
 
         </header>
@@ -53,7 +53,7 @@
                 <div class="row">
                     <!-- WIDGET -->
                     <div class="col-md-4 widget animate-me fadeInLeft">
-                        <img src="images/logo-footer.png" id="footer-logo" alt="Logo footer">
+                        <img src="/images/logo-footer.png" id="footer-logo" alt="Logo footer">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper felis pulvinar neque pharetra auctor. Donec vel erat pretium, interdum justo sed, mollis tortor.</p>
                     </div>
                     <!-- WIDGET -->
@@ -110,7 +110,7 @@
         <a href="#" id="scroll-top" class="fadeInRight animate-me"><i class="fa fa-angle-double-up"></i></a>
     </div>
 
-    <%- @getBlock("scripts").add(["js/jquery-1.11.1.min.js","js/plugins.js","js/custom.js"]).toHTML() %>
+    <%- @getBlock("scripts").add(["/js/jquery-1.11.1.min.js","/js/plugins.js","/js/custom.js"]).toHTML() %>
 
 
 </body>
