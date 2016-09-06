@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<!-- Mirrored from jp.vinaas.com/services/custome-software/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2015 10:43:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>  オンデマンドソフトウエア開発 &#8211; アウトソーシング</title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../../xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://jp.vinaas.com/wp-content/themes/vinaas/js/html5.js"></script>
+	<![endif]-->
+	
+	<link href="../../wp-content/themes/vinaas/css/notosansjapanese.css" rel="stylesheet" type="text/css" />
+	<link href="../../wp-content/themes/vinaas/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../../wp-content/themes/vinaas/css/content.css" rel="stylesheet" type="text/css" />
+	<link href="../../wp-content/themes/vinaas/css/vinaas.css" rel="stylesheet" type="text/css" />
+
+	<link href="../../wp-content/themes/vinaas/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="../../wp-content/themes/vinaas/js/jquery-1.10.2.min.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/jquery.vinaas.js"></script>
+<link rel="alternate" type="application/rss+xml" title="ベトナム先進ソフトウェア会社 - VinaAS Co.,Ltd &raquo; オンデマンドソフトウエア開発 &#8211; アウトソーシング Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='contact-form-7-css'  href='../../wp-content/plugins/contact-form-7/includes/css/stylesfa0c.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='../../wp-content/plugins/revslider/rs-plugin/css/settings4698.css?ver=4.6.3' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='js_composer_custom_css-css'  href='../../wp-content/uploads/js_composer/custom8f76.css?ver=4.3.5' type='text/css' media='screen' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery90f9.js?ver=1.11.1'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min4698.js?ver=4.6.3'></script>
+<script type='text/javascript' src='../../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min4698.js?ver=4.6.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.8" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../index1c4a.html?p=27' />
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "<h2>THIS IS SOME TITLE</h2><br/>";
+
+					content += "Type:"+obj.type+"</br>";
+					content += "ID:"+obj.id+"</br>";        
+					content += "Aspect Ratio:"+obj.aspectratio+"</br>";  
+					
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'b2e6072a4a';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://jp.vinaas.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				}
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined')
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://jp.vinaas.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--></head>
+
+<body class="page page-id-27 page-child parent-pageid-13 page-template-default wpb-js-composer js-comp-ver-4.3.5 vc_responsive">
+	<div id="utter-wrapper" class="color-skin-1">
+		<header id="header" class="header" data-spy="affix" data-offset-top="10">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../../index.html">
+							<img class="home-logo" alt="VINAAS Home Small Logo" src="../../wp-content/themes/vinaas/images/VinaAS_logo_70x70.png" /> <span>VINAAS Co.,Ltd</span>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-top-header" class="nav navbar-nav"><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7"><a href="../../index.html">ホーム</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="../../about-us/index.html">会社概要</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22"><a href="../../products/index.html">プロダクト</a>
+<ul class="sub-menu">
+	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="../../products/volume-calculator/index.html">容積計算</a></li>
+	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="../../products/online-office/index.html">オンラインオフィス</a></li>
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="../../products/order-management-system/index.html">倉庫注文管理アプリケーション</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="../../products/student-management-systems/index.html">生徒管理アプリケーション</a></li>
+	<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="../../products/hoshasen-de-byoki-no-chosa-chiryo/index.html">放射線で病気の調査・治療</a></li>
+	<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="../../products/fue-shogyo-hanbai-uebu-saito/index.html">フエ商業販売Webサイト</a></li>
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../../products/manga/index.html">漫画</a></li>
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-21"><a href="../index.html">サービス</a>
+<ul class="sub-menu">
+	<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="../rich-internet-applications/index.html">リーチインターネットアプリケーション</a></li>
+	<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="../data-analysis-calculation/index.html">データ分析と計算</a></li>
+	<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-27 current_page_item menu-item-29"><a href="index.html">オンデマンドソフトウエア開発</a></li>
+</ul>
+</li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="../../news/index.html">ニュース</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="../../contact-us/index.html">お問い合わせ</a></li>
+</ul></div>				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+		</header>
+		<!-- /#header -->
+	<div id="index-1" class="main-wrapper">	<div class="main-wrapper">
+		<section id="page-title-wrapper" class="page-title-wrapper">
+			<div class="container">
+				<div class="row">
+					<div>
+						<h4>オンデマンドソフトウエア開発 &#8211; アウトソーシング</h4>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+	</div>
+	<div class="container">
+		<div class="row flush" style="margin: 30px 0;">
+			<p>投資家を説得するStartUpアイディアをビジュアルで概念化する時、貴社のニーズやプロセスに合う特定なアプリケーションを作成する時、いつでもVinaASはあなたをベストITソリューションで応援致します</p>
+<p>ソフトウエア開発業界で５年間経験を持つVinaASは１０年経験スタッフによりお客様のご要望にマッチする適格なソフトウエアを開発するとともに、信頼性が高く、より効果的なソリューションを提供します。</p>
+<h2>オンデマンドソフトウエア開発とは?</h2>
+<p>ビジネスは学校で勉強した事をそのまま持ち込むのではありません。あなたが悩んでいる時、他の人がすでにあなたのアイディアルを実現しています。</p>
+<p>成功した企業はそれぞれの運営管理方法があります。多く情報の中で、どうしたら貴社のビジネスに最適な決定を出せるでしょうか？そんな時、当社開発のソフトウエアが役に立ちます。</p>
+<p>市場では沢山のソフトウエアを販売されています。しかし、色々な企業のビジネスやプロセスを持ち込んでいるため、一般的な機能のみで、貴社にぴったりのプログラムとは言えません。</p>
+<p>一般的なソフトウエアは企業のビジネスに適切ではなりません。どうしたらお客様に適切なアドバイスを提供できるでしょうか？</p>
+<p>VinaASは上記の問題に対して、貴社の特徴にマッチした適切なソフトウエアを提供します。</p>
+<h2>オンデマンドソフトウエア開発 &#8211; アウトソーシング</h2>
+<p>VinaASは企業ＩＴソリューションに確実なスキルと良い専門を持っています。ビジネスプロセス管理、リソース計画、顧客関係管理、協力管理と他の業界の経験でベストカスタマイズソリューションをお客様へ提供します。</p>
+<h3>VinaASは下記のようにオンデマンドソフトウエア開発サービスを提供します。</h3>
+<ul>
+<li>仕事管理アプリケーション</li>
+<li>人事管理アプリケーション</li>
+<li>顧客管理アプリケーション</li>
+<li>生産管理アプリケーション</li>
+<li>購入販売管理アプリケーション</li>
+<li>教育管理アプリケーション</li>
+<li>……….</li>
+</ul>
+<p>企業管理アプリケーションや教育管理アプリケーション等の他VinaASはお客様の要求アプリケーションも開発していますので、VinaASが多くの企業の選択肢です。企業の現在問題を一緒に解決させていただいています。VinaASはお客様の要求を満足しています。</p>
+<p>貴社のアイデアを実現するため、良いパートナーを探しているなら、是非VinaASをお選び下さい。当社のアプリケーションの提供と共に、貴社にびったりのカスタマイズアプリケーションを開発します。</p>
+<h2>VinaASでの開発プロセス</h2>
+<h3>ステップ１：お客様の要求を分析して、ソフトウエア要求仕様書を作成します。</h3>
+<p>ソフトウエア要求仕様書を作成するために、VinaASはお客様と協力して、アプリケーションの機能を確認します。お客様が正確にアプリケーションのインターフェースと機能を分かりやすくするために、アプリケーションのPrototypeも作成します。</p>
+<h3>ステップ２：システム分析と設計</h3>
+<p>要求仕様書を基づいて、分析して、アプリケーションを設計します。</p>
+<h3>ステップ３：実装と単体テスト</h3>
+<h3>ステップ４：テスト</h3>
+<p>開発したアプリケーションのシステムテストを行います。そして、お客様と協力して、お客様の要求を全て実装されるかどうかのテストを行います。</p>
+<h3>ステップ５：デプロイメントとメンテナンス</h3>
+<p>アプリケーションをデプロイメントし、セットアップします。アプリケーションの使い方をお客様に訓練するサービスを提供します。利用時に発生する問題と新しい要求を続けてメンテナンスします。</p>
+<p>お問い合わせ/ご相談は今すぐ<br />
+担当者：+0841999010101（Ｖｉ） </p>
+		</div>
+	</div>
+</div>
+<footer id="footer-1" class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				Copyright © 2014. <b>Công ty TNHH Phần mềm Tiên Tiến Việt Nam</b> All rights reserved. <br>
+				<i class="fa   fa-home "></i>  305 Hồng Lạc, Phường 10, Quận Tân Bình, TP Hồ Chí Minh<br>
+				<i class="fa  fa-book "></i>  25A Nguyễn Khoa Vy, Phường Vỹ Dạ, TP Huế<br>
+				<i class="fa  fa-phone "></i>  Điện thoại: 01999010101 - Email: contact@vinaas.com<br>
+			</div>
+			<div class="col-md-3">
+			<!-- /.about-us -->
+				<div class="widget stay-connedted">
+					<ul class="social-links">
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</footer>
+
+<!-- /#skin-chooser-wrap -->
+</div>
+<!-- /#utter-wrapper -->
+
+
+    <!-- Bootstrap JS & Others JavaScript Plugins
+        ================================================== -->
+    <!-- Placed At The End Of The Document So Page Loads Faster -->
+    <script src="../../wp-content/themes/vinaas/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/bootstrap.min.js"></script> 
+    <script src="../../wp-content/themes/vinaas/js/jquery.carouFredSel-6.2.1.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/jquery.prettyPhoto.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/easing.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/jflickrfeed.min.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/jquery.fitvids.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/jquery.ui.totop.min.js"></script>
+    <script src="../../wp-content/themes/vinaas/js/jquery.isotope.min.js"></script>
+
+
+</body>
+
+<!-- Mirrored from jp.vinaas.com/services/custome-software/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2015 10:43:37 GMT -->
+</html>

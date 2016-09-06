@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<!-- Mirrored from jp.vinaas.com/contact-us/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2015 10:43:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>  お問い合わせ</title>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://jp.vinaas.com/wp-content/themes/vinaas/js/html5.js"></script>
+	<![endif]-->
+	
+	<link href="../wp-content/themes/vinaas/css/notosansjapanese.css" rel="stylesheet" type="text/css" />
+	<link href="../wp-content/themes/vinaas/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../wp-content/themes/vinaas/css/content.css" rel="stylesheet" type="text/css" />
+	<link href="../wp-content/themes/vinaas/css/vinaas.css" rel="stylesheet" type="text/css" />
+
+	<link href="../wp-content/themes/vinaas/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="../wp-content/themes/vinaas/js/jquery-1.10.2.min.js"></script>
+    <script src="../wp-content/themes/vinaas/js/jquery.vinaas.js"></script>
+<link rel="alternate" type="application/rss+xml" title="ベトナム先進ソフトウェア会社 - VinaAS Co.,Ltd &raquo; お問い合わせ Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/stylesfa0c.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='../wp-content/plugins/revslider/rs-plugin/css/settings4698.css?ver=4.6.3' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='js_composer_custom_css-css'  href='../wp-content/uploads/js_composer/custom8f76.css?ver=4.3.5' type='text/css' media='screen' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery90f9.js?ver=1.11.1'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min4698.js?ver=4.6.3'></script>
+<script type='text/javascript' src='../wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min4698.js?ver=4.6.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.8" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../indexd8eb.html?p=17' />
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "<h2>THIS IS SOME TITLE</h2><br/>";
+
+					content += "Type:"+obj.type+"</br>";
+					content += "ID:"+obj.id+"</br>";        
+					content += "Aspect Ratio:"+obj.aspectratio+"</br>";  
+					
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'b2e6072a4a';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://jp.vinaas.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				}
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined')
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+					}
+				},30);
+			});
+		</script>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://jp.vinaas.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--></head>
+
+<body class="page page-id-17 page-template page-template-page-contact page-template-page-contact-php wpb-js-composer js-comp-ver-4.3.5 vc_responsive">
+	<div id="utter-wrapper" class="color-skin-1">
+		<header id="header" class="header" data-spy="affix" data-offset-top="10">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../index.html">
+							<img class="home-logo" alt="VINAAS Home Small Logo" src="../wp-content/themes/vinaas/images/VinaAS_logo_70x70.png" /> <span>VINAAS Co.,Ltd</span>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-top-header" class="nav navbar-nav"><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7"><a href="../index.html">ホーム</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="../about-us/index.html">会社概要</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22"><a href="../products/index.html">プロダクト</a>
+<ul class="sub-menu">
+	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="../products/volume-calculator/index.html">容積計算</a></li>
+	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="../products/online-office/index.html">オンラインオフィス</a></li>
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="../products/order-management-system/index.html">倉庫注文管理アプリケーション</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="../products/student-management-systems/index.html">生徒管理アプリケーション</a></li>
+	<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="../products/hoshasen-de-byoki-no-chosa-chiryo/index.html">放射線で病気の調査・治療</a></li>
+	<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="../products/fue-shogyo-hanbai-uebu-saito/index.html">フエ商業販売Webサイト</a></li>
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../products/manga/index.html">漫画</a></li>
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-21"><a href="../services/index.html">サービス</a>
+<ul class="sub-menu">
+	<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="../services/rich-internet-applications/index.html">リーチインターネットアプリケーション</a></li>
+	<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="../services/data-analysis-calculation/index.html">データ分析と計算</a></li>
+	<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../services/custome-software/index.html">オンデマンドソフトウエア開発</a></li>
+</ul>
+</li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="../news/index.html">ニュース</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-17 current_page_item menu-item-19"><a href="index.html">お問い合わせ</a></li>
+</ul></div>				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+		</header>
+		<!-- /#header -->
+	<div id="index-1" class="main-wrapper">
+<div id="about-us" class="main-wrapper">
+    <section id="page-title-wrapper" class="page-title-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>お問い合わせ/ご相談</h4>
+                </div>
+                <!-- /.col-sm-6 -->
+                <div class="col-xs-6 hidden-xs">
+                    <ol class="breadcrumb pull-right">
+                        <li><a href="../index.html">ホーム</a></li>
+                        <li class="active">お問い合わせ/ご相談</li>
+                    </ol>
+                </div>
+                <!-- /.col-xs-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+</div>
+<div class="container">
+	</div>
+<div class="container">
+    <div class="contact">
+        <div class="col-md-4">
+            <div class="ct-title">
+                <i class="glyphicon glyphicon-home"></i>
+                <span>住所</span>
+                <label></label>
+            </div>
+            <div class="ct-content">
+                <span>Công ty TNHH Phần mềm Tiên Tiến Việt Nam </span>
+                <span><b>VinaAS Co.,Ltd</b></span>
+                <span> 305 Hồng Lạc, Phường 10</span>
+                <span>Quận Tân Bình, TP Hồ Chí Minh</span>
+            </div>
+
+            <div class="ct-title">
+                <i class="glyphicon glyphicon-earphone"></i>
+                <span>お問い合わせ/ご相談</span>
+                <label></label>
+            </div>
+            <div class="ct-content">
+                <span>Điện thoại: 01999010101 </span>
+                
+                <span>Email: <a href="mailto:contact@vinaas.com">contact@vinaas.com</a></span>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="sendEmail" class="ct-title">
+                <i class="glyphicon glyphicon-send"></i>
+                <span>お問い合わせ/ご相談</span>
+                <label></label>
+            </div>
+            <div class="ct-content form-group">
+				<div class="wpcf7" id="wpcf7-f56-o1" lang="ja" dir="ltr">
+<div class="screen-reader-response"></div>
+<form name="" action="http://jp.vinaas.com/contact-us/#wpcf7-f56-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="56" />
+<input type="hidden" name="_wpcf7_version" value="4.0.3" />
+<input type="hidden" name="_wpcf7_locale" value="ja" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f56-o1" />
+<input type="hidden" name="_wpnonce" value="88b9c5f827" />
+</div>
+<div style="margin: 0 -15px;">
+<p class="col-sm-4"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="お名前" /></span></p>
+<p class="col-sm-4"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="メール" /></span></p>
+<p class="col-sm-4"><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="タイトル" /></span></p>
+<p style="clear: left;">
+</div>
+<p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false" placeholder="メッセージ"></textarea></span></p>
+<p><input type="submit" value="送信する" class="wpcf7-form-control wpcf7-submit btn btn-success" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer id="footer-1" class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				Copyright © 2014. <b>Công ty TNHH Phần mềm Tiên Tiến Việt Nam</b> All rights reserved. <br>
+				<i class="fa   fa-home "></i>  305 Hồng Lạc, Phường 10, Quận Tân Bình, TP Hồ Chí Minh<br>
+				<i class="fa  fa-book "></i>  25A Nguyễn Khoa Vy, Phường Vỹ Dạ, TP Huế<br>
+				<i class="fa  fa-phone "></i>  Điện thoại: 01999010101 - Email: contact@vinaas.com<br>
+			</div>
+			<div class="col-md-3">
+			<!-- /.about-us -->
+				<div class="widget stay-connedted">
+					<ul class="social-links">
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</footer>
+
+<!-- /#skin-chooser-wrap -->
+</div>
+<!-- /#utter-wrapper -->
+
+
+    <!-- Bootstrap JS & Others JavaScript Plugins
+        ================================================== -->
+    <!-- Placed At The End Of The Document So Page Loads Faster -->
+    <script src="../wp-content/themes/vinaas/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../wp-content/themes/vinaas/js/bootstrap.min.js"></script> 
+    <script src="../wp-content/themes/vinaas/js/jquery.carouFredSel-6.2.1.js"></script>
+    <script src="../wp-content/themes/vinaas/js/jquery.prettyPhoto.js"></script>
+    <script src="../wp-content/themes/vinaas/js/easing.js"></script>
+    <script src="../wp-content/themes/vinaas/js/jflickrfeed.min.js"></script>
+    <script src="../wp-content/themes/vinaas/js/jquery.fitvids.js"></script>
+    <script src="../wp-content/themes/vinaas/js/jquery.ui.totop.min.js"></script>
+    <script src="../wp-content/themes/vinaas/js/jquery.isotope.min.js"></script>
+
+
+</body>
+
+<!-- Mirrored from jp.vinaas.com/contact-us/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2015 10:43:38 GMT -->
+</html>
